@@ -7,22 +7,31 @@
   <meta content="" name="description">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header id="header">
+      <div id="social">      
+          <ul>
+            <li><a href="https://github.com/jonesxv"><i class="fab fa-2x fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/ryan-jones-0b1b6a8b"><i class="fab fa-2x fa-linkedin"></i></a></li>
+            <li><a href="https://codepen.io/jonesxv"><i class="fab fa-2x fa-twitter"></i></a></li>
+            <li><a href="https://codepen.io/jonesxv"><i class="fab fa-2x fa-instagram"></i></a></li>
+            <li><a href="https://codepen.io/jonesxv"><i class="fab fa-2x fa-codepen"></i></a></li>
+          </ul>
+        </div>
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <!--<a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>-->
+        <a href="#hero"><img class="img-fluid" src="img/xv.svg" alt="" title="" /></img></a>
       
-        <h1><a href="#hero">ryanJones</a></h1>
+        <!--<h1><a href="#hero">Ryan Jones</a></h1>-->
       </div>
 
-      <nav id="">
+      <nav id="nav-menu-container">
         <ul class="nav-menu pull-right">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -32,6 +41,8 @@
       </nav>
     </div>
   </header>
+
+
 
   <section id="hero">
     <div class="hero-container">
@@ -44,23 +55,13 @@
 
   <!-- MAIN -->  
   <main id="main">
+
     <section id="portfolio"  class="section-bg" >
       <div class="container">
 
         <header class="section-header">
           <h3 class="section-title">Portfolio</h3>
         </header>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
 
         <div class="row portfolio-container">
 
@@ -71,14 +72,17 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Card 2</a></h4>
                 <p>Card</p>
+                <i class="fab fa-2x fa-node"></i>
+                <i class="fab fa-2x fa-react"></i>
+                <i class="fab fa-2x fa-js"></i>
               </div>
             </div>
           </div>
@@ -88,12 +92,15 @@
               <figure>
                 <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
                 <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="#" class="link-details" title="More Details"></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">Web 2</a></h4>
                 <p>Web</p>
+                <i class="fab fa-2x fa-node"></i>
+                <i class="fab fa-2x fa-react"></i>
+                <i class="fab fa-2x fa-js"></i>
               </div>
             </div>
           </div>
@@ -101,14 +108,17 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">App 3</a></h4>
                 <p>App</p>
+                <i class="fab fa-2x fa-node"></i>
+                <i class="fab fa-2x fa-react"></i>
+                <i class="fab fa-2x fa-java"></i>
               </div>
             </div>
           </div>
@@ -121,6 +131,13 @@
 
       </div>
     </section>
+    <section>
+        <div class="container" class="section-bg">
+          <header class="section-header">
+            <h3 class="section-title">About Me</h3>
+          </header>
+        </div>
+      </section>
   </main>
 
 

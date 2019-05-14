@@ -14,6 +14,11 @@
 //   });
 // }
 $(document).ready(() => {
+  const name = 'Ryan Jones'
+  $('#hero h1').click(function() {
+    console.log(event.target.innerText)
+  })
+
   console.log('ready')
   $('#portfolio-flters').click(function() {
     event.preventDefault();
