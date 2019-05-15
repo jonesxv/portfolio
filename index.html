@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <header id="header">
       <div id="social">      
           <ul>
@@ -23,20 +24,33 @@
             <li><a href="https://codepen.io/jonesxv"><i class="fab fa-2x fa-codepen"></i></a></li>
           </ul>
         </div>
-    <div class="container">
+    <div class="container" id="full-nav">
 
       <div id="logo" class="pull-left">
         <a href="#hero"><img class="img-fluid" src="img/xv.svg" alt="" title="" /></img></a>
       
         <!--<h1><a href="#hero">Ryan Jones</a></h1>-->
       </div>
-
+      <div>
+        <button class="navbar-toggler float-right" id="nav-ham" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+            class="fas fa-bars fa-1x"></i></span></button>
+    
+        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+          <ul>
+            <li class="nav-item">Home</li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#work">Work</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu pull-right">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +59,11 @@
 
 
   <section id="hero">
+    <div id="triangle-topleft"></div>
+    
     <div class="hero-container">
+        <div id="triangle-bottomright"></div>
+      <img alt="myphoto" src="img/me.jpeg" class="img-fluid rounded-circle">
       <h1 id="type-out">_</h1>
       <h2>Full stack web developer</h2>
       <a href="#about" class="btn-get-started">About Me</a>
@@ -55,12 +73,22 @@
 
   <!-- MAIN -->  
   <main id="main">
+    <section id="about">
+      <div class="container" class="section-bg">
+        <header class="section-header">
+          <h3 class="section-title">About Me</h3>
+        </header>
+        <p>Hello, I'm Ryan Jones! A full stack web developer in Phoenix, Arizona.
 
-    <section id="portfolio"  class="section-bg" >
+
+        </p>
+      </div>
+    </section>
+    <section id="work"  class="section-bg" >
       <div class="container">
 
         <header class="section-header">
-          <h3 class="section-title">Portfolio</h3>
+          <h3 class="section-title">My Work</h3>
         </header>
 
         <div class="row portfolio-container">
@@ -75,8 +103,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
+                <h4><a href="#">Tournament Generator</a></h4>
+                <p>Application to generate a tournament pool and bracket</p>
                 <i class="fab fa-2x fa-node"></i>
                 <i class="fab fa-2x fa-react"></i>
                 <i class="fab fa-2x fa-js"></i>
@@ -93,8 +121,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
+                <h4><a href="#">To-Do Application</a></h4>
+                <p>Save a todo list and share with friends.</p>
                 <i class="fab fa-2x fa-node"></i>
                 <i class="fab fa-2x fa-react"></i>
                 <i class="fab fa-2x fa-js"></i>
@@ -111,8 +139,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
+                <h4><a href="#">Google Maps API Search</a></h4>
+                <p>Find photos on Google Places based off of keyword search.</p>
                 <i class="fab fa-2x fa-node"></i>
                 <i class="fab fa-2x fa-react"></i>
                 <i class="fab fa-2x fa-java"></i>
@@ -128,15 +156,24 @@
 
       </div>
     </section>
-    <section>
-        <div class="container" class="section-bg">
-          <header class="section-header">
-            <h3 class="section-title">About Me</h3>
-          </header>
-        </div>
-      </section>
-  </main>
 
+  </main>
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+  
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Ryan Jones
+        </div>
+      </div>
+    </footer>
 
     <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
